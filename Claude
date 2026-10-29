@@ -1,0 +1,19 @@
+- Alterçaões necessárias - 
+
+
+*Precisa alterar a função de website para desktop
+*Alterar resolução de aplicação,para se ajustar a todos os tipos de resoluções existentes de forma automatizada
+*Alterar criação de holerites para se locomover automaticamente para a nav chamada holerites que se localiza superiormente ao local já estabelecido
+*Não quero que o registro de func - XXXX seja de forma gradual,quero  que a numeração seja de forma aleatória,de 4 dígitos
+*Dashbord deve mostrar tanto quantidade de usuários ativos e inativos
+*Quero que as cores principais da aplicação sejam mais suaves,atualmente está uma coloração morta
+*Ao registrar advertencia,quero que adicione uma função que mostre somente os usuarios ativos,não inativos,para que não aja conflito
+*Quero que o Admin do site possa manipular livrimente para adicionar mais beneficios caso surjam novos ou retirar caso sejam deletados,sem restrições quanto a quantidade,podendo também infromar a descrição e quantidade
+assim como os anteriores na própria aba.
+*Puxar automaticamente localização automatica via google maps ao colocar o cep(não esquecer de colocar esta função,já foi solicitado e não foi imbutido no projeto!)
+*Na Aba funcionarios,que seja possivel manipular livremenete entre as abas dos 247 sem a necessidade de passar 1 por 1 até chegar a última aba
+*Aumentar o limite de pdf possível ser enviado para o sistema para a maior quantidade possível,dependendo do tamanho este valor pode ser ultrapassado
+*Adicionar função limpar notificações,alterar cores de necessidades,azul mais claro,vermeelho mais escuro,escuro mais neutro possível
+*Caso o funcionaro cumpra uma carga horária menor que a solicitada,enviar uma notificação ao admin aviisando o gestor sobre o ocorrido.
+*Necessita adicionar a função visiabilidade do perfil,no menu lateral,Chamado administrado,uma vez que este é manipulavel futuramente para outras funções,como funcionario,rh,etc.
+*Estude e analise profundamente para a melhoria daaplicação em desktop-(relembrando)
