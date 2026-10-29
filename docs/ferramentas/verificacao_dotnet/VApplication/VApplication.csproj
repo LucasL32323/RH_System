@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><AssemblyName>HRAuto.Application</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(B)/src/HRAuto.Application/**/*.cs" />
+    <ProjectReference Include="../VDomain/VDomain.csproj" />
+    <!-- no lugar do pacote Microsoft.Extensions.DependencyInjection.Abstractions (NuGet bloqueado aqui) -->
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>

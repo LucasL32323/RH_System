@@ -1,0 +1,27 @@
+name: hr_auto
+description: HR-Auto - aplicação automatizada de Recursos Humanos (TCC SENAI Santos). Protótipo de Login e Cadastro.
+publish_to: "none"
+version: 0.2.0+2
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1   # gerência de estado do MVVM (ViewModels)
+  http: ^1.2.2               # cliente HTTP para a API .NET
+  google_fonts: ^6.2.1       # fonte Inter
+  http_parser: ^4.0.2        # MediaType do upload multipart (já vem com o http; declarado porque é importado direto)
+  file_picker: ^8.1.2        # escolher o PDF do holerite (web, Android, iOS e desktop)
+  file_saver: ^0.2.14        # entregar o PDF baixado (download no navegador / arquivo no aparelho)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/google_fonts/ # Inter 400-800 (OFL), usada pelo google_fonts sem baixar da internet

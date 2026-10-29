@@ -1,0 +1,22 @@
+name: hr_auto
+description: HR-Auto - aplicação automatizada de Recursos Humanos (TCC SENAI Santos).
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1   # gerência de estado do MVVM (ViewModels)
+  http: ^1.2.2               # cliente HTTP para a API .NET
+  google_fonts: ^6.2.1       # fonte Inter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

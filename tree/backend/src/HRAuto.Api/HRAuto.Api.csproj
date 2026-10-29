@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <!-- Camada Api: controllers, autenticação JWT, Swagger, middlewares. Só aqui se faz a composição das dependências. -->
+  <PropertyGroup>
+    <RootNamespace>HRAuto.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HRAuto.Application\HRAuto.Application.csproj" />
+    <ProjectReference Include="..\HRAuto.Infrastructure\HRAuto.Infrastructure.csproj" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <!-- Valida o JWT de acesso em cada requisição (RF01, RNF04) -->
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+  </ItemGroup>
+</Project>

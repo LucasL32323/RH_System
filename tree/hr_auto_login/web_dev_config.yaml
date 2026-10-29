@@ -1,0 +1,9 @@
+# Servidor de desenvolvimento do Flutter Web (flutter run -d chrome / -d web-server), Flutter 3.38+.
+# Repassa /api/... para a API .NET em http://localhost:5080: com --dart-define=API_URL=http://localhost:5173
+# o app chama a propria origem, sem depender de CORS (e funciona em navegadores que bloqueiam outra porta).
+server:
+  host: "localhost"
+  port: 5173
+  proxy:
+    - target: "http://localhost:5080/"
+      prefix: "/api/"

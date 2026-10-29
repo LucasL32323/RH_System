@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><AssemblyName>HRAuto.Domain</AssemblyName></PropertyGroup>
+  <ItemGroup><Compile Include="$(B)/src/HRAuto.Domain/**/*.cs" /></ItemGroup>
+</Project>

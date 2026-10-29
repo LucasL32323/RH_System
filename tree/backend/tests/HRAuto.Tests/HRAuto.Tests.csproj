@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Testes xUnit: regras de negócio (Domain/Application), banco (migrations/seed) e integração da API. -->
+  <PropertyGroup>
+    <RootNamespace>HRAuto.Tests</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="6.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+    <ProjectReference Include="..\..\src\HRAuto.Domain\HRAuto.Domain.csproj" />
+    <ProjectReference Include="..\..\src\HRAuto.Application\HRAuto.Application.csproj" />
+    <ProjectReference Include="..\..\src\HRAuto.Infrastructure\HRAuto.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\HRAuto.Api\HRAuto.Api.csproj" />
+  </ItemGroup>
+
+  <!-- Modelo físico oficial: usado pelo teste que compara o esquema gerado pelas migrations com o SQL -->
+  <ItemGroup>
+    <None Include="..\..\..\database\modelo_fisico_sqlite.sql" Link="modelo_fisico_sqlite.sql" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Camada Domain: entidades e regras puras. Não depende de nenhuma outra camada. -->
+  <PropertyGroup>
+    <RootNamespace>HRAuto.Domain</RootNamespace>
+  </PropertyGroup>
+</Project>

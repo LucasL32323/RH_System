@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Só as partes da Infrastructure que não dependem de EF Core, BCrypt ou JWT (pacotes NuGet bloqueados aqui) -->
+  <PropertyGroup><AssemblyName>HRAuto.Infrastructure</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(B)/src/HRAuto.Infrastructure/Armazenamento/*.cs" />
+    <Compile Include="$(B)/src/HRAuto.Infrastructure/Tempo/*.cs" />
+    <Compile Include="$(B)/src/HRAuto.Infrastructure/Comunicacao/*.cs" />
+    <ProjectReference Include="../VApplication/VApplication.csproj" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>

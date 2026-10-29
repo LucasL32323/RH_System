@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Camada Infrastructure: acesso a dados (EF Core + SQLite), relógio, segurança (BCrypt, JWT), e-mail. Implementa contratos da Application. -->
+  <PropertyGroup>
+    <RootNamespace>HRAuto.Infrastructure</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HRAuto.Application\HRAuto.Application.csproj" />
+    <!-- EF Core + SQLite com migrations (RNF15) -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <!-- Hash de senha BCrypt (RNF05) -->
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <!-- Emissão e leitura de JWT HS256 (RF01, RF03). Mesma versão que o JwtBearer 8.0.10 usa na Api. -->
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+  </ItemGroup>
+</Project>

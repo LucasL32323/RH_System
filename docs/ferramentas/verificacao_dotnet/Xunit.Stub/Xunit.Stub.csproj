@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><AssemblyName>xunit.stub</AssemblyName><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup><Compile Include="Xunit.cs" /></ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>12.0</LangVersion>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <B>$(MSBuildThisFileDirectory)../../../tree/backend</B>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+</Project>

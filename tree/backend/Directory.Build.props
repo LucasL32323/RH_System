@@ -1,0 +1,11 @@
+<Project>
+  <!-- Configuração comum a todos os projetos da solução -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>12.0</LangVersion>
+    <Deterministic>true</Deterministic>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+</Project>

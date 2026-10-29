@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <!-- Controllers, middleware e extensões da Api que não usam JwtBearer/Swashbuckle/Infrastructure -->
+  <PropertyGroup><AssemblyName>HRAuto.Api</AssemblyName><OutputType>Library</OutputType></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(B)/src/HRAuto.Api/Controllers/*.cs" />
+    <Compile Include="$(B)/src/HRAuto.Api/Middleware/*.cs" />
+    <Compile Include="$(B)/src/HRAuto.Api/Extensoes/ServicosExtensoes.cs" />
+    <Compile Include="$(B)/src/HRAuto.Api/Seguranca/ClaimsPrincipalExtensoes.cs" />
+    <Compile Include="$(B)/src/HRAuto.Api/Seguranca/Papeis.cs" />
+    <ProjectReference Include="../VApplication/VApplication.csproj" />
+  </ItemGroup>
+</Project>

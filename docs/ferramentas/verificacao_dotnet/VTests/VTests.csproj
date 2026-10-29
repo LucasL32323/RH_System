@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><AssemblyName>HRAuto.Tests</AssemblyName><RootNamespace>HRAuto.Tests</RootNamespace></PropertyGroup>
+  <ItemGroup>
+    <Using Include="Xunit" />
+    <Compile Include="$(B)/tests/HRAuto.Tests/Domain/**/*.cs" />
+    <Compile Include="$(B)/tests/HRAuto.Tests/Application/**/*.cs" />
+    <Compile Include="$(B)/tests/HRAuto.Tests/Infrastructure/ArmazenamentoHoleritesTests.cs" />
+    <Compile Include="$(B)/tests/HRAuto.Tests/Infrastructure/RelogioBrasiliaTests.cs" />
+    <Compile Include="Runner.cs" />
+    <ProjectReference Include="../VDomain/VDomain.csproj" />
+    <ProjectReference Include="../VApplication/VApplication.csproj" />
+    <ProjectReference Include="../VInfra/VInfra.csproj" />
+    <ProjectReference Include="../Xunit.Stub/Xunit.Stub.csproj" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>
